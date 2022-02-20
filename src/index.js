@@ -4,7 +4,8 @@ import {
   PrimaryButton,
   SecondaryButton,
   TertiaryButton,
-} from "./components/Buttons";
+  SignUpModal,
+} from "./components";
 
 import { GlobalStyles, defaultTheme, darkTheme } from "./utils";
 
@@ -36,6 +37,7 @@ const App = () => {
           width: "100vw",
           height: "100vh",
           display: "flex",
+          flexFlow: "column",
           alignItems: "center",
           justifyContent: "space-around",
         }}
@@ -45,6 +47,7 @@ const App = () => {
         </PrimaryButton>
         <SecondaryButton modifiers="large">Goodbye World</SecondaryButton>
         <TertiaryButton>Hey World</TertiaryButton>
+        <SignUpModal></SignUpModal>
       </div>
 
       <div>
