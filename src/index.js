@@ -11,7 +11,7 @@ import { GlobalStyles } from "./utils";
 const App = () => {
   return (
     <div>
-      <PrimaryButton>Hello World</PrimaryButton>
+      <PrimaryButton modifiers="large">Hello World</PrimaryButton>
       <SecondaryButton>Goodbye World</SecondaryButton>
       <TertiaryButton>Hey World</TertiaryButton>
 
