@@ -11,6 +11,19 @@ const BUTTON_MODIFIERS = {
     font-size: ${typeScale.header3};
     padding: 16px 24px;
   `,
+  warning: () => `
+    background-color: ${defaultTheme.status.warningColor};
+    color: ${defaultTheme.textColorInverted}
+
+    &:hover, &:focus {
+      background-color: ${defaultTheme.status.warningColorHover};
+      outline: 3px solid ${defaultTheme.status.warningColorHover};
+    }
+
+    &:active {
+      background-color: ${defaultTheme.status.warningColorActive};
+    }
+  `,
 };
 
 export const Button = styled.button`
